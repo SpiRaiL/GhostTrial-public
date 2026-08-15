@@ -1,0 +1,518 @@
+{
+  "Angled view": {
+    "orientation_shoulder_width": 0.224,
+    "view": "front-on",
+    "subject_height_pct": [
+      24.5,
+      53.4,
+      57.8
+    ],
+    "ankle_margin_px": 40.5,
+    "head_margin_px": 89.1,
+    "frames_body_clipped": 0,
+    "deepest_crouch_overall": 0.558,
+    "max_reach_overall": 0.586,
+    "max_wrist_above_head": 0.337,
+    "peak_wrist_speed": 13.63,
+    "n_takes": 9,
+    "takes": [
+      {
+        "t": [
+          8.01,
+          12.16
+        ],
+        "dur": 4.15,
+        "deepest_crouch": 0.645,
+        "max_reach": 0.481,
+        "wrist_above_head": 0.297,
+        "peak_wrist_speed": 12.63
+      },
+      {
+        "t": [
+          16.72,
+          21.32
+        ],
+        "dur": 4.6,
+        "deepest_crouch": 0.572,
+        "max_reach": 0.47,
+        "wrist_above_head": 0.314,
+        "peak_wrist_speed": 13.2
+      },
+      {
+        "t": [
+          26.13,
+          30.58
+        ],
+        "dur": 4.45,
+        "deepest_crouch": 0.589,
+        "max_reach": 0.475,
+        "wrist_above_head": 0.329,
+        "peak_wrist_speed": 12.66
+      },
+      {
+        "t": [
+          35.09,
+          39.49
+        ],
+        "dur": 4.4,
+        "deepest_crouch": 0.586,
+        "max_reach": 0.465,
+        "wrist_above_head": 0.307,
+        "peak_wrist_speed": 12.2
+      },
+      {
+        "t": [
+          43.69,
+          48.2
+        ],
+        "dur": 4.5,
+        "deepest_crouch": 0.558,
+        "max_reach": 0.565,
+        "wrist_above_head": 0.337,
+        "peak_wrist_speed": 12.75
+      },
+      {
+        "t": [
+          53.05,
+          59.21
+        ],
+        "dur": 6.16,
+        "deepest_crouch": 0.587,
+        "max_reach": 0.494,
+        "wrist_above_head": 0.282,
+        "peak_wrist_speed": 12.55
+      },
+      {
+        "t": [
+          63.21,
+          69.42
+        ],
+        "dur": 6.21,
+        "deepest_crouch": 0.631,
+        "max_reach": 0.586,
+        "wrist_above_head": 0.306,
+        "peak_wrist_speed": 12.6
+      },
+      {
+        "t": [
+          74.62,
+          80.63
+        ],
+        "dur": 6.01,
+        "deepest_crouch": 0.602,
+        "max_reach": 0.483,
+        "wrist_above_head": 0.316,
+        "peak_wrist_speed": 13.21
+      },
+      {
+        "t": [
+          85.99,
+          92.19
+        ],
+        "dur": 6.21,
+        "deepest_crouch": 0.687,
+        "max_reach": 0.581,
+        "wrist_above_head": 0.295,
+        "peak_wrist_speed": 13.63
+      }
+    ]
+  },
+  "Front view 01": {
+    "orientation_shoulder_width": 0.057,
+    "view": "profile",
+    "subject_height_pct": [
+      35.6,
+      60.3,
+      64.3
+    ],
+    "ankle_margin_px": 38.7,
+    "head_margin_px": 83.9,
+    "frames_body_clipped": 0,
+    "deepest_crouch_overall": 0.468,
+    "max_reach_overall": 0.386,
+    "max_wrist_above_head": 0.311,
+    "peak_wrist_speed": 13.68,
+    "n_takes": 5,
+    "takes": [
+      {
+        "t": [
+          4.2,
+          8.86
+        ],
+        "dur": 4.65,
+        "deepest_crouch": 0.578,
+        "max_reach": 0.386,
+        "wrist_above_head": 0.311,
+        "peak_wrist_speed": 13.68
+      },
+      {
+        "t": [
+          13.61,
+          18.22
+        ],
+        "dur": 4.6,
+        "deepest_crouch": 0.564,
+        "max_reach": 0.32,
+        "wrist_above_head": 0.304,
+        "peak_wrist_speed": 12.52
+      },
+      {
+        "t": [
+          22.62,
+          26.93
+        ],
+        "dur": 4.3,
+        "deepest_crouch": 0.604,
+        "max_reach": 0.326,
+        "wrist_above_head": 0.275,
+        "peak_wrist_speed": 12.78
+      },
+      {
+        "t": [
+          31.48,
+          36.04
+        ],
+        "dur": 4.55,
+        "deepest_crouch": 0.468,
+        "max_reach": 0.375,
+        "wrist_above_head": 0.282,
+        "peak_wrist_speed": 13.4
+      },
+      {
+        "t": [
+          40.84,
+          45.55
+        ],
+        "dur": 4.7,
+        "deepest_crouch": 0.554,
+        "max_reach": 0.352,
+        "wrist_above_head": 0.299,
+        "peak_wrist_speed": 12.12
+      }
+    ]
+  },
+  "Front view 02": {
+    "orientation_shoulder_width": 0.071,
+    "view": "profile",
+    "subject_height_pct": [
+      28.5,
+      55.6,
+      60.9
+    ],
+    "ankle_margin_px": 34.7,
+    "head_margin_px": 90.1,
+    "frames_body_clipped": 0,
+    "deepest_crouch_overall": 0.474,
+    "max_reach_overall": 0.39,
+    "max_wrist_above_head": 0.382,
+    "peak_wrist_speed": 17.51,
+    "n_takes": 14,
+    "takes": [
+      {
+        "t": [
+          8.41,
+          10.76
+        ],
+        "dur": 2.35,
+        "deepest_crouch": 0.557,
+        "max_reach": 0.31,
+        "wrist_above_head": 0.24,
+        "peak_wrist_speed": 8.21
+      },
+      {
+        "t": [
+          14.81,
+          19.02
+        ],
+        "dur": 4.2,
+        "deepest_crouch": 0.555,
+        "max_reach": 0.355,
+        "wrist_above_head": 0.326,
+        "peak_wrist_speed": 14.09
+      },
+      {
+        "t": [
+          22.52,
+          26.93
+        ],
+        "dur": 4.4,
+        "deepest_crouch": 0.556,
+        "max_reach": 0.287,
+        "wrist_above_head": 0.256,
+        "peak_wrist_speed": 12.92
+      },
+      {
+        "t": [
+          31.83,
+          34.03
+        ],
+        "dur": 2.2,
+        "deepest_crouch": 0.561,
+        "max_reach": 0.326,
+        "wrist_above_head": 0.165,
+        "peak_wrist_speed": 6.08
+      },
+      {
+        "t": [
+          36.09,
+          38.39
+        ],
+        "dur": 2.3,
+        "deepest_crouch": 0.855,
+        "max_reach": 0.227,
+        "wrist_above_head": 0.271,
+        "peak_wrist_speed": 12.58
+      },
+      {
+        "t": [
+          40.94,
+          43.99
+        ],
+        "dur": 3.05,
+        "deepest_crouch": 0.502,
+        "max_reach": 0.389,
+        "wrist_above_head": 0.382,
+        "peak_wrist_speed": 3.71
+      },
+      {
+        "t": [
+          46.05,
+          47.7
+        ],
+        "dur": 1.65,
+        "deepest_crouch": 0.877,
+        "max_reach": 0.297,
+        "wrist_above_head": 0.274,
+        "peak_wrist_speed": 16.75
+      },
+      {
+        "t": [
+          49.5,
+          53.05
+        ],
+        "dur": 3.55,
+        "deepest_crouch": 0.488,
+        "max_reach": 0.39,
+        "wrist_above_head": 0.238,
+        "peak_wrist_speed": 7.85
+      },
+      {
+        "t": [
+          56.36,
+          57.96
+        ],
+        "dur": 1.6,
+        "deepest_crouch": 0.875,
+        "max_reach": 0.208,
+        "wrist_above_head": 0.279,
+        "peak_wrist_speed": 6.46
+      },
+      {
+        "t": [
+          60.21,
+          63.26
+        ],
+        "dur": 3.05,
+        "deepest_crouch": 0.474,
+        "max_reach": 0.337,
+        "wrist_above_head": 0.283,
+        "peak_wrist_speed": 4.53
+      },
+      {
+        "t": [
+          65.72,
+          67.32
+        ],
+        "dur": 1.6,
+        "deepest_crouch": 0.887,
+        "max_reach": 0.336,
+        "wrist_above_head": 0.277,
+        "peak_wrist_speed": 11.07
+      },
+      {
+        "t": [
+          69.27,
+          72.22
+        ],
+        "dur": 2.95,
+        "deepest_crouch": 0.564,
+        "max_reach": 0.275,
+        "wrist_above_head": 0.271,
+        "peak_wrist_speed": 4.19
+      },
+      {
+        "t": [
+          74.57,
+          76.13
+        ],
+        "dur": 1.55,
+        "deepest_crouch": 0.915,
+        "max_reach": 0.311,
+        "wrist_above_head": 0.3,
+        "peak_wrist_speed": 17.51
+      },
+      {
+        "t": [
+          77.98,
+          81.18
+        ],
+        "dur": 3.2,
+        "deepest_crouch": 0.498,
+        "max_reach": 0.371,
+        "wrist_above_head": 0.239,
+        "peak_wrist_speed": 4.37
+      }
+    ]
+  },
+  "Side view": {
+    "orientation_shoulder_width": 0.246,
+    "view": "front-on",
+    "subject_height_pct": [
+      19.2,
+      49.1,
+      54.3
+    ],
+    "ankle_margin_px": 50.5,
+    "head_margin_px": 84.7,
+    "frames_body_clipped": 0,
+    "deepest_crouch_overall": 0.492,
+    "max_reach_overall": 0.665,
+    "max_wrist_above_head": 0.37,
+    "peak_wrist_speed": 15.57,
+    "n_takes": 12,
+    "takes": [
+      {
+        "t": [
+          4.85,
+          9.21
+        ],
+        "dur": 4.35,
+        "deepest_crouch": 0.492,
+        "max_reach": 0.569,
+        "wrist_above_head": 0.331,
+        "peak_wrist_speed": 13.33
+      },
+      {
+        "t": [
+          13.01,
+          17.32
+        ],
+        "dur": 4.3,
+        "deepest_crouch": 0.531,
+        "max_reach": 0.574,
+        "wrist_above_head": 0.307,
+        "peak_wrist_speed": 15.57
+      },
+      {
+        "t": [
+          20.72,
+          25.03
+        ],
+        "dur": 4.3,
+        "deepest_crouch": 0.543,
+        "max_reach": 0.577,
+        "wrist_above_head": 0.356,
+        "peak_wrist_speed": 14.46
+      },
+      {
+        "t": [
+          28.38,
+          32.58
+        ],
+        "dur": 4.2,
+        "deepest_crouch": 0.493,
+        "max_reach": 0.586,
+        "wrist_above_head": 0.282,
+        "peak_wrist_speed": 7.23
+      },
+      {
+        "t": [
+          35.49,
+          39.64
+        ],
+        "dur": 4.15,
+        "deepest_crouch": 0.552,
+        "max_reach": 0.591,
+        "wrist_above_head": 0.37,
+        "peak_wrist_speed": 8.78
+      },
+      {
+        "t": [
+          43.39,
+          47.3
+        ],
+        "dur": 3.9,
+        "deepest_crouch": 0.615,
+        "max_reach": 0.541,
+        "wrist_above_head": 0.298,
+        "peak_wrist_speed": 5.7
+      },
+      {
+        "t": [
+          48.05,
+          49.85
+        ],
+        "dur": 1.8,
+        "deepest_crouch": 0.584,
+        "max_reach": 0.665,
+        "wrist_above_head": 0.366,
+        "peak_wrist_speed": 4.28
+      },
+      {
+        "t": [
+          52.5,
+          58.26
+        ],
+        "dur": 5.76,
+        "deepest_crouch": 0.574,
+        "max_reach": 0.595,
+        "wrist_above_head": 0.323,
+        "peak_wrist_speed": 13.34
+      },
+      {
+        "t": [
+          61.86,
+          65.22
+        ],
+        "dur": 3.35,
+        "deepest_crouch": 0.63,
+        "max_reach": 0.569,
+        "wrist_above_head": 0.302,
+        "peak_wrist_speed": 6.04
+      },
+      {
+        "t": [
+          66.12,
+          67.97
+        ],
+        "dur": 1.85,
+        "deepest_crouch": 0.624,
+        "max_reach": 0.54,
+        "wrist_above_head": 0.286,
+        "peak_wrist_speed": 14.47
+      },
+      {
+        "t": [
+          71.32,
+          77.73
+        ],
+        "dur": 6.41,
+        "deepest_crouch": 0.534,
+        "max_reach": 0.572,
+        "wrist_above_head": 0.34,
+        "peak_wrist_speed": 13.75
+      },
+      {
+        "t": [
+          80.43,
+          86.59
+        ],
+        "dur": 6.16,
+        "deepest_crouch": 0.571,
+        "max_reach": 0.602,
+        "wrist_above_head": 0.282,
+        "peak_wrist_speed": 14.94
+      }
+    ]
+  }
+}

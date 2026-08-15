@@ -1,0 +1,238 @@
+{
+  "Angled view.mov": {
+    "frames_scored": 1919,
+    "frames_total": 1919,
+    "ankle_lowest_px": 319.5,
+    "ankle_margin_px": 40.5,
+    "head_highest_px": 89.1,
+    "frames_ankle_within_10px_of_bottom": 0,
+    "frames_head_within_10px_of_top": 0,
+    "subject_height_pct": [
+      24.5,
+      53.4,
+      57.8
+    ],
+    "hip_drop_pct_of_standing": 44.2,
+    "max_horizontal_reach_bodyheights": 0.521,
+    "wrist_above_head_px": -99.5,
+    "takes": [
+      [
+        8.01,
+        12.11
+      ],
+      [
+        16.97,
+        21.32
+      ],
+      [
+        26.23,
+        30.53
+      ],
+      [
+        35.14,
+        39.49
+      ],
+      [
+        43.94,
+        48.2
+      ],
+      [
+        53.1,
+        59.11
+      ],
+      [
+        63.31,
+        69.42
+      ],
+      [
+        74.67,
+        80.58
+      ],
+      [
+        86.04,
+        92.14
+      ]
+    ],
+    "n_takes": 9
+  },
+  "Front view 01.mov": {
+    "frames_scored": 1025,
+    "frames_total": 1025,
+    "ankle_lowest_px": 321.3,
+    "ankle_margin_px": 38.7,
+    "head_highest_px": 83.9,
+    "frames_ankle_within_10px_of_bottom": 0,
+    "frames_head_within_10px_of_top": 0,
+    "subject_height_pct": [
+      35.6,
+      60.3,
+      64.3
+    ],
+    "hip_drop_pct_of_standing": 53.2,
+    "max_horizontal_reach_bodyheights": 0.238,
+    "wrist_above_head_px": -109.5,
+    "takes": [
+      [
+        4.25,
+        8.86
+      ],
+      [
+        13.71,
+        18.17
+      ],
+      [
+        22.62,
+        26.93
+      ],
+      [
+        31.58,
+        35.99
+      ],
+      [
+        40.99,
+        45.5
+      ]
+    ],
+    "n_takes": 5
+  },
+  "Front view 02.mov": {
+    "frames_scored": 1705,
+    "frames_total": 1705,
+    "ankle_lowest_px": 325.3,
+    "ankle_margin_px": 34.7,
+    "head_highest_px": 90.1,
+    "frames_ankle_within_10px_of_bottom": 0,
+    "frames_head_within_10px_of_top": 0,
+    "subject_height_pct": [
+      28.5,
+      55.6,
+      60.9
+    ],
+    "hip_drop_pct_of_standing": 52.6,
+    "max_horizontal_reach_bodyheights": 0.347,
+    "wrist_above_head_px": -105.1,
+    "takes": [
+      [
+        8.76,
+        10.76
+      ],
+      [
+        16.62,
+        19.02
+      ],
+      [
+        24.97,
+        26.78
+      ],
+      [
+        31.88,
+        34.03
+      ],
+      [
+        36.19,
+        38.39
+      ],
+      [
+        40.99,
+        43.94
+      ],
+      [
+        46.05,
+        47.7
+      ],
+      [
+        49.5,
+        53.0
+      ],
+      [
+        56.36,
+        57.96
+      ],
+      [
+        60.31,
+        63.21
+      ],
+      [
+        65.72,
+        67.32
+      ],
+      [
+        70.62,
+        72.17
+      ],
+      [
+        79.33,
+        81.03
+      ]
+    ],
+    "n_takes": 13
+  },
+  "Side view.mov": {
+    "frames_scored": 1788,
+    "frames_total": 1788,
+    "ankle_lowest_px": 309.5,
+    "ankle_margin_px": 50.5,
+    "head_highest_px": 84.7,
+    "frames_ankle_within_10px_of_bottom": 0,
+    "frames_head_within_10px_of_top": 0,
+    "subject_height_pct": [
+      19.2,
+      49.1,
+      54.3
+    ],
+    "hip_drop_pct_of_standing": 50.8,
+    "max_horizontal_reach_bodyheights": 0.527,
+    "wrist_above_head_px": -98.0,
+    "takes": [
+      [
+        4.85,
+        9.16
+      ],
+      [
+        13.01,
+        17.32
+      ],
+      [
+        20.72,
+        24.97
+      ],
+      [
+        28.38,
+        32.53
+      ],
+      [
+        35.49,
+        39.59
+      ],
+      [
+        43.44,
+        44.99
+      ],
+      [
+        48.15,
+        49.8
+      ],
+      [
+        56.66,
+        58.21
+      ],
+      [
+        66.22,
+        67.92
+      ],
+      [
+        71.37,
+        72.87
+      ],
+      [
+        76.03,
+        77.63
+      ],
+      [
+        84.93,
+        86.59
+      ]
+    ],
+    "n_takes": 12
+  }
+}

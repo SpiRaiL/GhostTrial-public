@@ -1,0 +1,36 @@
+# SONIC training environment on the Isaac Lab version gear_sonic actually targets.
+#
+# The Nebius-challenge base (docker/Dockerfile) is Isaac Lab 3.0 and does NOT work:
+# 3.0 moved off PhysX, so `SimulationCfg.physx` no longer exists and gear_sonic's
+# env config cannot be built. See docs/training_env.md.
+#
+#   nvcr.io/nvidia/isaac-lab:2.3.2   <- exactly the version in the repo's badge
+#
+# Build:
+#   docker build -f docker/Dockerfile.isaaclab232 -t ghosttrial-sonic:232 .
+
+FROM nvcr.io/nvidia/isaac-lab:2.3.2
+
+ENV PYTHONUNBUFFERED=1 \
+    ACCEPT_EULA=Y \
+    OMNI_KIT_ACCEPT_EULA=Y \
+    WANDB_MODE=disabled \
+    GR00T_PATH=/opt/gr00t
+
+# The base entrypoint is runheadless.sh; we want a shell.
+ENTRYPOINT ["/bin/bash", "-c"]
+
+COPY vendor/GR00T-WholeBodyControl /opt/gr00t
+
+# gear_sonic's pyproject resolves its version via `attr: gear_sonic.version.VERSION`,
+# so the directory must still be named gear_sonic when pip installs it.
+WORKDIR /opt/gr00t
+RUN /isaac-sim/python.sh -m pip install --no-cache-dir -e "gear_sonic/[training]" 2>&1 | tail -20
+
+# Undeclared runtime imports on the training path — gear_sonic's pyproject omits
+# these. Teleop/camera/deploy extras (depthai, pyrealsense2, unitree_sdk2py, ...)
+# are deliberately NOT installed; the trainer never imports them.
+RUN /isaac-sim/python.sh -m pip install --no-cache-dir \
+      rich termcolor tyro tensordict open3d vector_quantize_pytorch
+
+WORKDIR /gt

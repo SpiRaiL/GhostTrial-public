@@ -1,0 +1,71 @@
+# Third-party copyrighted video-lifting source (MK behind-the-scenes footage)
+# plus the ~115 MB of frames/mattes derived from it. Ignore the contents but
+# keep the script that regenerates them.
+raw/mk-bts-getoverhere/*
+!raw/mk-bts-getoverhere/isolate_character.py
+!raw/mk-bts-getoverhere/README.md
+
+.venv/
+__pycache__/
+
+# Delivered capture footage and reference clips — third-party / commissioned video,
+# tens of GB. Kept on disk and in the nightly restic backup of ~/RC, never in git.
+raw/capture-01/
+raw/capture-02/
+raw/reference-clips/
+raw/mk-bts-uppercut/*
+!raw/mk-bts-uppercut/README.md
+data/sync_media/
+data/upwork_package_02/
+
+# Third-party datasets and vendored upstream repos — 95 GB between them, all
+# re-fetchable from their source. retargeted/ is BONES-SEED (49 GB extracted);
+# vendor/ is NVIDIA's GR00T-WholeBodyControl, GMR and GEM-X, each its own repo.
+retargeted/
+vendor/
+raw/bandai-namco/
+raw/cmu-boxing/
+
+# GEM-X per-take output: keep the solve (hpe_results.pt) and the retargets
+# (.csv/.bvh), drop the 145 MB of preview renders, which any run regenerates.
+data/gemx_output/**/*.mp4
+# copies of the delivered footage, staged as GEM-X input
+data/gemx_input/
+
+# MK1 game capture, same third-party footing as the rest of the MK material
+raw/mk-move-list/
+
+# Screen capture of the Nebius console: 9 MB, and it shows a live account.
+# The stills and clips cut from it are redacted by cropping.
+raw/nebius/
+
+# Screen capture of the Mixamo UI: 18 MB, and it is a recording of a
+# third-party web app. Kept on disk and in the nightly restic backup.
+raw/mixamo/*.webm
+
+# Blender's rolling backup of the previous save
+*.blend1
+data/upwork_package_02.zip
+
+# training run outputs — checkpoints are large and root-owned (container writes them)
+logs_rl/
+data/rollouts/
+data/g1_bodies/
+
+# reports are regenerable from tools/split_report.py, and carry large media
+reports/
+
+# Per-frame render output. 3193 PNGs, 635 MB — every one of them comes back from
+# tools/render_motion.py or render_isaac.py, and the mp4s that matter are in
+# reports/. This was the single biggest thing in the repo.
+media/
+
+# Training run logs. Records rather than sources, tens of MB each, and the numbers
+# that matter are quoted in the reports. Kept on disk and in the nightly restic
+# backup of ~/RC.
+logs/*.log
+
+# Blender scene files: outputs, not sources. tools/make_human_blend.py rebuilds
+# the human-motion scene, same convention presentation/.gitignore already uses for
+# kata.blend. Kept on disk.
+data/blend/*.blend
