@@ -140,7 +140,8 @@ STEPS = [
      "<code>presentation/renders/ghost_trial_03_get_over_here.mp4</code> &mdash; "
      "1920&times;1080, 30 fps, H.264 with the soundtrack in AAC. Watch it once end to end, "
      "then put it on YouTube; unlisted is enough unless the form says otherwise."),
-    ("Publish the policy on Hugging Face", "The form wants a Hugging Face link rather "
+    ("Publish the policy on Hugging Face &mdash; done", "The form wants a Hugging Face "
+     "link rather "
      "than a file, so the ONNX goes up as a model repo. The card is already written &mdash; "
      "<code>policy/README.md</code> in the public tree is what Hugging Face renders as the "
      "model page. The token installed here (<code>~/.cache/huggingface/token</code>, account "
@@ -150,8 +151,22 @@ STEPS = [
      ".venv/bin/hf upload DaveRc/ghosttrial-g1-scorpion \\\n"
      "  ../GhostTrial-public/policy . --repo-type model</pre>"
      "149 MB over three .onnx files, plus the card and both configs. The link to paste is "
-     "<code>https://huggingface.co/DaveRc/ghosttrial-g1-scorpion</code>. Open it once and "
-     "check the card renders and the files are listed."),
+     "<code>https://huggingface.co/DaveRc/ghosttrial-g1-scorpion</code> &mdash; the repo "
+     "root, not a <code>/settings</code> or <code>/commit</code> page."),
+    ("Publish the motion data as a Hugging Face dataset", "The form has a second "
+     "Hugging Face field, for the dataset, and it wants a <code>dataset</code> repo &mdash; "
+     "the model repo does not count for it. The card is written: "
+     "<code>docs/dataset_card.md</code>, which goes up as the dataset's README."
+     "<pre>cd ~/RC/competitions/GhostTrial\n"
+     ".venv/bin/hf repo create DaveRc/ghosttrial-g1-scorpion-motion --repo-type dataset\n"
+     ".venv/bin/hf upload DaveRc/ghosttrial-g1-scorpion-motion \\\n"
+     "  docs/dataset_card.md README.md --repo-type dataset\n"
+     ".venv/bin/hf upload DaveRc/ghosttrial-g1-scorpion-motion \\\n"
+     "  ../GhostTrial-public/data data --repo-type dataset</pre>"
+     "117 MB: the motion_lib pickles, the G1 CSV takes, the performer's BVH and the pose "
+     "solves. The link to paste is "
+     "<code>https://huggingface.co/datasets/DaveRc/ghosttrial-g1-scorpion-motion</code> "
+     "&mdash; note the <code>/datasets/</code> in it."),
     ("The GitHub repo &mdash; done", "Pushed to "
      "<a href=\"https://github.com/SpiRaiL/GhostTrial-public\">github.com/SpiRaiL/"
      "GhostTrial-public</a>, 241 files, 256 MB, branch <code>main</code>. If anything "
@@ -172,10 +187,14 @@ STEPS = [
 ]
 
 DELIVERABLES = [
-    ("ONNX-exported fine-tuned policy", "needs a Hugging Face link",
-     "Exported and pushed: <code>policy/model_step_003750_{g1,encoder,decoder}.onnx</code>, "
-     "149 MB, from the Nebius checkpoint. The form wants it on Hugging Face, so it also "
-     "needs uploading as a model repo &mdash; step 3."),
+    ("ONNX-exported fine-tuned policy", "ready",
+     "<code>policy/model_step_003750_{g1,encoder,decoder}.onnx</code>, 149 MB, from the "
+     "Nebius checkpoint. In GitHub and on Hugging Face at "
+     "<code>huggingface.co/DaveRc/ghosttrial-g1-scorpion</code>."),
+    ("Dataset &mdash; Hugging Face", "needs uploading",
+     "The form has its own field for it, and it wants a <code>dataset</code> repo. The data "
+     "is in GitHub under <code>data/</code>; the card is <code>docs/dataset_card.md</code>. "
+     "Commands in step 3."),
     ("Dataset docs + methodology", "ready",
      "<code>docs/submission.md</code>, <code>docs/video_to_pose_plan.md</code>, "
      "<code>docs/upwork_capture_brief.md</code>, <code>docs/training_env.md</code>."),
