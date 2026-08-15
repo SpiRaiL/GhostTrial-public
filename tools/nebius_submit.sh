@@ -29,8 +29,10 @@ JOB_SCRIPT="${JOB_SCRIPT:-tools/nebius_job.sh}"
 PLATFORM="${3:-gpu-h100-sxm}"
 PRESET="${4:-1gpu-16vcpu-200gb}"
 HOURS="${5:-3}"
-PROJECT="${NB_PROJECT:-project-e00rvhqzpr0059t6qgkgbn}"
-BUCKET="${NB_BUCKET:-rc-ghosttrial}"
+# both are yours to set: NB_PROJECT is a Nebius project id, NB_BUCKET a bucket
+# in it. No default, so this cannot quietly submit into someone else's project.
+PROJECT="${NB_PROJECT:?set NB_PROJECT to your Nebius project id}"
+BUCKET="${NB_BUCKET:?set NB_BUCKET to your object-storage bucket}"
 : "${NB_KEY_ID:?}" "${NB_KEY_SECRET:?}"
 
 export PATH="$HOME/.nebius/bin:$PATH"

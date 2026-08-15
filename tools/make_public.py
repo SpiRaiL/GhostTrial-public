@@ -34,6 +34,8 @@ EXCLUDE = [
     ("data/gemx_output/*/preprocess/", "per-frame ViT features, boxes and camera "
                                        "solved straight off the performer's video"),
     ("a5n.csv", "scratch file, no longer referenced"),
+    ("tools/submission_report.py", "the internal submission checklist: local paths, "
+                                   "account and token layout, nothing a reader needs"),
 ]
 
 # extra files, copied in from outside the tracked tree: dest -> source

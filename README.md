@@ -1,5 +1,16 @@
 # GhostTrial — Ghost Trial 03 (Martial Arts track)
 
+[![GET OVER HERE — Scorpion's spear throw and uppercut on a Unitree G1](https://img.youtube.com/vi/1Oo8h655VMM/maxresdefault.jpg)](https://youtu.be/1Oo8h655VMM)
+
+<p align="center"><b><a href="https://youtu.be/1Oo8h655VMM">▶ Watch the five-minute build (YouTube)</a></b></p>
+
+| | |
+|---|---|
+| 🎬 Video | **[youtu.be/1Oo8h655VMM](https://youtu.be/1Oo8h655VMM)** — 5:51, chapters in the description |
+| 🤖 Policy (ONNX) | **[huggingface.co/DaveRc/ghosttrial-g1-scorpion](https://huggingface.co/DaveRc/ghosttrial-g1-scorpion)** |
+| 📊 Motion data | **[huggingface.co/datasets/DaveRc/ghosttrial-g1-scorpion-motion](https://huggingface.co/datasets/DaveRc/ghosttrial-g1-scorpion-motion)** |
+| 📄 Start here | **[`docs/submission.md`](docs/submission.md)** — deliverables, before/after, what is not in this repo |
+
 Goal: teach a Unitree G1 a **combat move the stock SONIC model can't do**, by
 fine-tuning the SONIC controller on custom motion data.
 
@@ -15,12 +26,6 @@ The combo — rather than either move alone — is deliberate: the track scores
 "harder and more original", the transition is the part a single-pose clip can't
 teach, and a longer trajectory is a better hedge against the fine-tune overfitting
 to one second of motion.
-
-**The video: https://youtu.be/1Oo8h655VMM** &mdash; five minutes, the whole build.
-
-**Judging this entry? Start at [`docs/submission.md`](docs/submission.md)** — where
-each deliverable lives, the before/after against the stock policy, and what is
-deliberately not in this repo.
 
 ## Competition parameters (verified against the site 2026-08-07)
 
@@ -163,11 +168,11 @@ mocap but no public release — contacting the authors is a long shot before Aug
 
 ## Data access
 
-BONES-SEED is gated. HF account `DaveRc` (david@robotcompany.net) has accepted
-the license, and a fine-grained token with `canReadGatedRepos` is installed at
+BONES-SEED is gated: accept its licence with your own Hugging Face account, then
+install a fine-grained token with `canReadGatedRepos` at
 `~/.cache/huggingface/token` (mode 600) — `huggingface_hub` finds it
-automatically, no login step needed. Nebius credentials are unrelated to this
-and are not used for dataset access.
+automatically, no login step needed. Nebius credentials are unrelated to this and
+are not used for dataset access.
 
 ## Sources
 - Hackathon: https://www.ultimatebots.com/hackathon
