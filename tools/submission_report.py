@@ -136,7 +136,7 @@ NEVER = [
 ]
 
 STEPS = [
-    ("Upload the video", "The 5.9 minute cut is rendered from the hand-edited blend to "
+    ("Upload the video &mdash; done", "The 5.9 minute cut is rendered from the hand-edited blend to "
      "<code>presentation/renders/ghost_trial_03_get_over_here.mp4</code> &mdash; "
      "1920&times;1080, 30 fps, H.264 with the soundtrack in AAC. Watch it once end to end, "
      "then put it on YouTube; unlisted is enough unless the form says otherwise."),
@@ -153,7 +153,7 @@ STEPS = [
      "149 MB over three .onnx files, plus the card and both configs. The link to paste is "
      "<code>https://huggingface.co/DaveRc/ghosttrial-g1-scorpion</code> &mdash; the repo "
      "root, not a <code>/settings</code> or <code>/commit</code> page."),
-    ("Publish the motion data as a Hugging Face dataset", "The form has a second "
+    ("Publish the motion data as a Hugging Face dataset &mdash; done", "The form has a second "
      "Hugging Face field, for the dataset, and it wants a <code>dataset</code> repo &mdash; "
      "the model repo does not count for it. The card is written: "
      "<code>docs/dataset_card.md</code>, which goes up as the dataset's README."
@@ -191,10 +191,9 @@ DELIVERABLES = [
      "<code>policy/model_step_003750_{g1,encoder,decoder}.onnx</code>, 149 MB, from the "
      "Nebius checkpoint. In GitHub and on Hugging Face at "
      "<code>huggingface.co/DaveRc/ghosttrial-g1-scorpion</code>."),
-    ("Dataset &mdash; Hugging Face", "needs uploading",
-     "The form has its own field for it, and it wants a <code>dataset</code> repo. The data "
-     "is in GitHub under <code>data/</code>; the card is <code>docs/dataset_card.md</code>. "
-     "Commands in step 3."),
+    ("Dataset &mdash; Hugging Face", "ready",
+     "138 files, 117 MB, live at "
+     "<code>huggingface.co/datasets/DaveRc/ghosttrial-g1-scorpion-motion</code>."),
     ("Dataset docs + methodology", "ready",
      "<code>docs/submission.md</code>, <code>docs/video_to_pose_plan.md</code>, "
      "<code>docs/upwork_capture_brief.md</code>, <code>docs/training_env.md</code>."),
@@ -202,9 +201,9 @@ DELIVERABLES = [
      "<code>policy/config.yaml</code> is the run as trained — 4096 envs, actor LR 2e-5, "
      "seed 0, motion <code>t12</code> — with <code>docker/</code> and "
      "<code>tools/nebius_job.sh</code> around it."),
-    ("Sim demo video", "needs uploading",
-     "Rendered: <code>presentation/renders/ghost_trial_03_get_over_here.mp4</code>, 5.9 "
-     "minutes, 1920&times;1080 H.264 + AAC. It needs watching once and putting on YouTube."),
+    ("Sim demo video", "ready",
+     "<a href=\"https://youtu.be/1Oo8h655VMM\">youtu.be/1Oo8h655VMM</a> &mdash; 5:51, "
+     "1920&times;1080, chapters in the description."),
     ("Before/after baseline comparison", "ready",
      "In the video, and stated numerically in <code>docs/submission.md</code>: the stock "
      "policy's pelvis moves 4 cm over the phrase, the fine-tune 33 cm."),

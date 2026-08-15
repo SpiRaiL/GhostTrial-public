@@ -19,6 +19,8 @@ combat phrase the stock controller cannot: a spear throw, a pull back, and a
 crouch into a rising uppercut, as one continuous motion under full physics.
 
 Entered in **Ghost Trial 03** (Ultimate Bots hackathon, Martial Arts track).
+**Watch it: https://youtu.be/1Oo8h655VMM** &mdash; the whole build, five minutes.
+
 Code, data and the full pipeline: **https://github.com/SpiRaiL/GhostTrial-public**
 
 ## Files

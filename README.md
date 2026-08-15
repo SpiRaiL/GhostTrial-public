@@ -16,6 +16,8 @@ The combo — rather than either move alone — is deliberate: the track scores
 teach, and a longer trajectory is a better hedge against the fine-tune overfitting
 to one second of motion.
 
+**The video: https://youtu.be/1Oo8h655VMM** &mdash; five minutes, the whole build.
+
 **Judging this entry? Start at [`docs/submission.md`](docs/submission.md)** — where
 each deliverable lives, the before/after against the stock policy, and what is
 deliberately not in this repo.
