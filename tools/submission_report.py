@@ -136,34 +136,46 @@ NEVER = [
 ]
 
 STEPS = [
-    ("Finish the video", "The cut is done at 5.9 minutes. Bake it out of "
-     "<code>presentation/ghosttrial_presentation.blend</code> (EDIT scene, 1920&times;1080, "
-     "30 fps, H.264 + AAC), watch it once end to end, then upload it. YouTube unlisted is "
-     "enough unless the form asks otherwise."),
-    ("Create the GitHub repo", "Empty, public, no README — the tree already has one. "
-     "Name it <code>ghosttrial</code> or similar under your own account."),
-    ("Push the public tree", "It is already built and committed at "
-     "<code>~/RC/competitions/GhostTrial-public</code>, one commit, no remote yet:"
-     "<pre>cd ~/RC/competitions/GhostTrial-public\n"
-     "git remote add origin git@github.com:&lt;you&gt;/ghosttrial.git\n"
-     "git push -u origin main</pre>"
-     "256 MB, of which 149 MB is the ONNX. Under every GitHub limit, no LFS needed."),
+    ("Upload the video", "The 5.9 minute cut is rendered from the hand-edited blend to "
+     "<code>presentation/renders/ghost_trial_03_get_over_here.mp4</code> &mdash; "
+     "1920&times;1080, 30 fps, H.264 with the soundtrack in AAC. Watch it once end to end, "
+     "then put it on YouTube; unlisted is enough unless the form says otherwise."),
+    ("Publish the policy on Hugging Face", "The form wants a Hugging Face link rather "
+     "than a file, so the ONNX goes up as a model repo. The card is already written &mdash; "
+     "<code>policy/README.md</code> in the public tree is what Hugging Face renders as the "
+     "model page. The token installed here (<code>~/.cache/huggingface/token</code>, account "
+     "<code>DaveRc</code>) already carries <code>repo.write</code>, so no new token is needed:"
+     "<pre>cd ~/RC/competitions/GhostTrial\n"
+     ".venv/bin/hf repo create DaveRc/ghosttrial-g1-scorpion --repo-type model\n"
+     ".venv/bin/hf upload DaveRc/ghosttrial-g1-scorpion \\\n"
+     "  ../GhostTrial-public/policy . --repo-type model</pre>"
+     "149 MB over three .onnx files, plus the card and both configs. The link to paste is "
+     "<code>https://huggingface.co/DaveRc/ghosttrial-g1-scorpion</code>. Open it once and "
+     "check the card renders and the files are listed."),
+    ("The GitHub repo &mdash; done", "Pushed to "
+     "<a href=\"https://github.com/SpiRaiL/GhostTrial-public\">github.com/SpiRaiL/"
+     "GhostTrial-public</a>, 241 files, 256 MB, branch <code>main</code>. If anything "
+     "changes, rebuild and push again:"
+     "<pre>python3 tools/make_public.py --commit\n"
+     "cd ../GhostTrial-public &amp;&amp; git push</pre>"),
     ("Check it as a stranger would", "Open the repo logged out. "
-     "<code>docs/submission.md</code> is the entry point; confirm "
-     "<code>policy/</code> holds three .onnx files and that nothing under "
-     "<code>data/</code> looks like video."),
-    ("Fill the form", f'<a href="{FORM}">{FORM}</a> — link the GitHub repo, paste the '
-     "video URL, and use the summary in <code>docs/submission.md</code> for anything asking "
-     "what the move is and how it was made."),
+     "<code>docs/submission.md</code> is the entry point; confirm <code>policy/</code> holds "
+     "three .onnx files and a readable card, and that nothing under <code>data/</code> looks "
+     "like video."),
+    ("Fill the form", f'<a href="{FORM}">{FORM}</a> &mdash; three links go in: the GitHub '
+     "repo, the Hugging Face model, and the video. Use the summary in "
+     "<code>docs/submission.md</code> for anything asking what the move is and how it was "
+     "made."),
     ("Say what is honest about it", "The policy holds 97% double support where the target "
-     "asks 58%: it prefers stability to the target's airborne frames. Better to state that "
-     "than to have a judge find it."),
+     "asks for 58%: it prefers stability to the target's airborne frames. Better to state "
+     "that than to have a judge find it."),
 ]
 
 DELIVERABLES = [
-    ("ONNX-exported fine-tuned policy", "ready",
-     "<code>policy/model_step_003750_{g1,encoder,decoder}.onnx</code>, 149 MB, exported "
-     "from the Nebius checkpoint on 15 Aug with <code>tools/export_onnx.sh</code>."),
+    ("ONNX-exported fine-tuned policy", "needs a Hugging Face link",
+     "Exported and pushed: <code>policy/model_step_003750_{g1,encoder,decoder}.onnx</code>, "
+     "149 MB, from the Nebius checkpoint. The form wants it on Hugging Face, so it also "
+     "needs uploading as a model repo &mdash; step 3."),
     ("Dataset docs + methodology", "ready",
      "<code>docs/submission.md</code>, <code>docs/video_to_pose_plan.md</code>, "
      "<code>docs/upwork_capture_brief.md</code>, <code>docs/training_env.md</code>."),
@@ -171,8 +183,9 @@ DELIVERABLES = [
      "<code>policy/config.yaml</code> is the run as trained — 4096 envs, actor LR 2e-5, "
      "seed 0, motion <code>t12</code> — with <code>docker/</code> and "
      "<code>tools/nebius_job.sh</code> around it."),
-    ("Sim demo video", "on you",
-     "The cut is finished; it needs baking and uploading. Nothing else is blocked on it."),
+    ("Sim demo video", "needs uploading",
+     "Rendered: <code>presentation/renders/ghost_trial_03_get_over_here.mp4</code>, 5.9 "
+     "minutes, 1920&times;1080 H.264 + AAC. It needs watching once and putting on YouTube."),
     ("Before/after baseline comparison", "ready",
      "In the video, and stated numerically in <code>docs/submission.md</code>: the stock "
      "policy's pelvis moves 4 cm over the phrase, the fine-tune 33 cm."),

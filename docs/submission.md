@@ -12,7 +12,7 @@ reference only — it is not in this repo and it never entered training.
 
 | asked for | here |
 |---|---|
-| ONNX-exported fine-tuned policy | `policy/model_step_003750_{g1,encoder,decoder}.onnx` |
+| ONNX-exported fine-tuned policy | `policy/model_step_003750_{g1,encoder,decoder}.onnx`, also published as a model on Hugging Face &mdash; `policy/README.md` is its card |
 | Dataset docs + methodology | `docs/video_to_pose_plan.md`, `docs/upwork_capture_brief.md`, `docs/magic_attack_pipeline.md`, and this file |
 | Reproducible training config | `policy/config.yaml` (the run as trained), `docs/training_env.md`, `docker/Dockerfile.isaaclab232`, `tools/nebius_job.sh`, `tools/train_local.sh` |
 | Sim demo video | linked from the submission form |

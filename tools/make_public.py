@@ -44,6 +44,7 @@ EXTRA = {
         "logs_rl/nebius_t12/exported/model_step_003750_encoder.onnx",
     "policy/model_step_003750_decoder.onnx":
         "logs_rl/nebius_t12/exported/model_step_003750_decoder.onnx",
+    "policy/README.md": "docs/model_card.md",   # doubles as the HF model card
     "policy/config.yaml": "logs_rl/nebius_t12/config.yaml",
     "policy/model_config.yaml": "logs_rl/nebius_t12/model_config.yaml",
 }
